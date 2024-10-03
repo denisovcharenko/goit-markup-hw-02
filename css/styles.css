@@ -1,0 +1,422 @@
+/* Глобальні налаштування для типографіки та кольорів */
+:root {
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #222F42;
+    --success: #31D0AA;
+    --text-color: #434455;
+    /* Оновлений колір тексту */
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light-background: #F4F4FD;
+    --modal-overlay: #222F42;
+    --hero-background: #E2E4E7;
+    --white-background: #FFFFFF;
+    --modal-background: #FCFCFC;
+
+    /* Шрифти */
+    --font-family: 'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* Шрифтові розміри */
+    --font-size-base: 16px;
+    --font-size-h1: 56px;
+    --font-size-h2: 36px;
+    --font-size-h3: 20px;
+    --font-size-small: 12px;
+    --font-size-medium: 16px;
+
+    /* Лінійна висота */
+    --line-height-base: 24px;
+    --line-height-h1: 60px;
+    --letter-spacing-base: 0.02em;
+    --letter-spacing-small: 0.04em;
+}
+
+/* Тіло документа */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    background-color: var(--white-background);
+}
+
+/* Заголовки */
+h1,
+h2,
+h3 {
+    color: var(--dark);
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-h1);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+/* Текст */
+p,
+a {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+/* Малий текст */
+.small-text {
+    font-size: var(--font-size-small);
+    line-height: 14px;
+    letter-spacing: var(--letter-spacing-small);
+}
+
+/* Середній текст */
+.medium-text {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+/* Кнопки */
+button,
+.button-text {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-small);
+    text-transform: uppercase;
+    background-color: var(--primary-brand);
+    color: var(--white-background);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--pressed-state);
+}
+
+/* Посилання */
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--primary-brand);
+}
+
+/* Логотип */
+.logo-link {
+    font-family: 'Raleway', sans-serif;
+    /* Шрифт для логотипу */
+    font-weight: 700;
+    /* Жирність */
+    font-size: 18px;
+    /* Розмір шрифту */
+    line-height: 1.17;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.03em;
+    /* Міжлітерний інтервал */
+    text-transform: uppercase;
+    /* Великі літери */
+    color: #4d5ae5;
+    /* Колір тексту */
+}
+
+header .logo-span {
+    color: #2e2f42;
+    /* Колір тексту для Studio */
+}
+
+/* Навігація */
+.menu {
+    list-style: none;
+    margin: 0;
+}
+
+.menu-link {
+    font-weight: 500;
+    /* Жирність */
+    font-size: 16px;
+    /* Розмір шрифту */
+    line-height: 1.5;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.02em;
+    /* Міжлітерний інтервал */
+    color: #2e2f42;
+    /* Колір тексту */
+    text-decoration: none;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: #404bbf;
+    /* Колір при ховері та фокусі */
+}
+
+/* Контактна інформація */
+.contact-address {
+    font-style: normal;
+    /* Прибирання курсиву */
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+}
+
+.contact-link {
+    font-size: 16px;
+    /* Розмір шрифту */
+    line-height: 1.5;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.02em;
+    /* Міжлітерний інтервал */
+    color: #434455;
+    /* Колір шрифту */
+    text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: #404bbf;
+    /* Колір при ховері та фокусі */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #2e2f42;
+    /* Фон секції */
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 56px;
+    /* Розмір заголовка */
+    line-height: 1.07;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.02em;
+    /* Міжлітерний інтервал */
+    color: #ffffff;
+    /* Колір тексту */
+    text-align: center;
+    /* Вирівнювання заголовка */
+}
+
+.hero-btn {
+    background-color: var(--primary-brand);
+    /* Фон кнопки */
+    font-family: var(--font-family);
+    /* Шрифт для кнопки */
+    font-weight: var(--font-weight-medium);
+    /* Жирність */
+    font-size: var(--font-size-medium);
+    /* Розмір шрифту */
+    line-height: 1.5;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.04em;
+    /* Міжлітерний інтервал */
+    color: #ffffff;
+    /* Колір тексту */
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--pressed-state);
+    /* Фон при ховері/фокусі */
+}
+
+/* Services Section */
+.services {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.services-list h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.services-list .h-service {
+    color: #2e2f42;
+}
+
+.services-list p {
+    font-size: 16px;
+    color: #434455;
+}
+/* Team Section */
+.team-section {
+    background-color: #F4F4FD;
+    /* Фон секції */
+}
+
+.team-heading {
+    font-size: 36px;
+    /* Розмір шрифту заголовка */
+    line-height: 1.11;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.02em;
+    /* Відступ між літерами */
+    text-transform: capitalize;
+    /* Формат тексту */
+    text-align: center;
+    /* Вирівнювання */
+    color: #2e2f42;
+    /* Колір тексту */
+}
+
+.team-list {
+    list-style: none;
+    margin: 0;
+}
+
+.team-item {
+    background-color: #FFFFFF;
+    /* Фон елементів списку */
+}
+
+.team-title {
+    font-size: 20px;
+    /* Розмір шрифту заголовка */
+    line-height: 1.2;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.02em;
+    /* Відступ між літерами */
+    color: #2e2f42;
+    /* Колір тексту заголовка */
+    font-weight: 500;
+    /* Жирність заголовка */
+}
+
+.team-description {
+    font-size: 16px;
+    /* Розмір шрифту для тексту */
+    line-height: 1.5;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.02em;
+    /* Відступ між літерами */
+    color: #434455;
+    /* Колір тексту */
+}
+
+/* Portfolio Section */
+.portfolio-container {
+    background-color: #F4F4FD;
+    /* Фон секції */
+}
+
+.portfolio-heading {
+    font-size: 36px;
+    /* Розмір шрифту заголовка */
+    line-height: 1.11;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.02em;
+    /* Відступ між літерами */
+    text-transform: capitalize;
+    /* Формат тексту */
+    text-align: center;
+    /* Вирівнювання */
+    color: #2e2f42;
+    /* Колір тексту */
+}
+
+.portfolio-list {
+    list-style: none;
+    margin: 0;
+}
+
+.portfolio-item {
+    background-color: #FFFFFF;
+    /* Фон елементів списку */
+}
+
+.portfolio-title {
+    font-size: 20px;
+    /* Розмір шрифту заголовка */
+    line-height: 1.2;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.02em;
+    /* Відступ між літерами */
+    color: #2e2f42;
+    /* Колір тексту заголовка */
+    font-weight: 500;
+    /* Жирність заголовка */
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    /* Розмір шрифту для тексту */
+    line-height: 1.5;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.02em;
+    /* Відступ між літерами */
+    color: #434455;
+    /* Колір тексту */
+}
+
+/* Footer Section */
+.footer-container {
+    background-color: #2e2f42;
+    /* Фон футера */
+    text-align: center;
+}
+
+.logo-link {
+    font-family: 'Raleway', sans-serif;
+    /* Шрифт для логотипу */
+    font-weight: 700;
+    /* Жирність */
+    font-size: 18px;
+    /* Розмір шрифту */
+    line-height: 1.17;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.03em;
+    /* Міжлітерний інтервал */
+    text-transform: uppercase;
+    /* Великі літери */
+    color: #4d5ae5;
+    /* Колір тексту */
+}
+
+.footer-container .logo-span {
+    color: #f4f4fd;
+    /* Колір тексту для Studio */
+}
+
+.footer-description {
+    line-height: 1.5;
+    /* Міжрядковий інтервал */
+    color: var(--light-background);
+    /* Колір тексту */
+    letter-spacing: 0.02em;
+    /* Відступ між літерами */
+    margin-top: 20px;
+    font-size: 16px;
+}
